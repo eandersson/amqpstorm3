@@ -63,6 +63,7 @@ class Connection(Stateful):
     :param dict ssl_options: SSL kwargs
     :param dict client_properties: None or dict of client properties
     :param str poller: Either "select" or "poll". If you encounter file descriptor errors, consider switching to "poll".
+    :param str locale: Locale used during connection negotiation. Defaults to "en_US".
     :param bool lazy: Lazy initialize the connection
 
     :raises AMQPConnectionError: Raises if the connection
@@ -87,6 +88,7 @@ class Connection(Stateful):
             'ssl_options': kwargs.get('ssl_options', {}),
             'client_properties': kwargs.get('client_properties', {}),
             'poller': kwargs.get('poller', 'select'),
+            'locale': kwargs.get('locale', 'en_US'),
         }
         self._validate_parameters()
         self._io = IO(self.parameters, exceptions=self._exceptions,

@@ -7,7 +7,6 @@ from pamqp import commands
 from pamqp.heartbeat import Heartbeat
 
 from amqpstorm3 import __version__
-from amqpstorm3.base import LOCALE
 from amqpstorm3.base import MAX_CHANNELS
 from amqpstorm3.base import MAX_FRAME_SIZE
 from amqpstorm3.base import Stateful
@@ -164,7 +163,7 @@ class Channel0(object):
             mechanism=mechanism,
             client_properties=self._client_properties(),
             response=credentials,
-            locale=LOCALE
+            locale=self._parameters['locale']
         )
         self._write_frame(start_ok_frame)
 
