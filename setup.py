@@ -31,7 +31,7 @@ setup(
     include_package_data=True,
     packages=find_packages(),
     license='MIT License',
-    url='https://amqpstorm.readthedocs.io/',
+    url='https://amqpstorm3.readthedocs.io/',
     install_requires=['pamqp>=3.0.0,<4.0'],
     extras_require={
         'management': ['requests>2'],

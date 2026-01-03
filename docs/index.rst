@@ -3,38 +3,32 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-AMQPStorm Documentation
+AMQPStorm3 Documentation
 =======================
-Thread-safe Python RabbitMQ Client & Management library.
+Thread-safe Python3 RabbitMQ Client & Management library.
 
 Installation
 ------------
-The latest version can be installed using `pip <https://pip.pypa.io/en/stable/quickstart/>`_ and is available at pypi `here <https://pypi.org/project/AMQPStorm/>`_
+The latest version can be installed using `pip <https://pip.pypa.io/en/stable/quickstart/>`_ and is available at pypi `here <https://pypi.org/project/AMQPStorm3/>`_
 ::
 
-    pip install amqpstorm
+    pip install amqpstorm3
 
 
-You can also install AMQPStorm with the management dependencies using.
+You can also install AMQPStorm3 with the management dependencies using.
 ::
 
-    pip install amqpstorm[management]
-
-You can also install AMQPStorm with the pool dependencies using.
-::
-
-    pip install amqpstorm[pool]
-
+    pip install amqpstorm3[management]
 
 Basic Example
 -------------
 
 ::
 
-   with amqpstorm.Connection('rmq.eandersson.net', 'guest', 'guest') as connection:
+   with amqpstorm3.Connection('rmq.eandersson.net', 'guest', 'guest') as connection:
        with connection.channel() as channel:
            channel.queue.declare('fruits')
-           message = amqpstorm.Message.create(
+           message = amqpstorm3.Message.create(
                channel, body='Hello RabbitMQ!', properties={
                    'content_type': 'text/plain'
                })
@@ -70,13 +64,6 @@ A wide verity of examples are available on Github at `here <https://github.com/e
 
 .. toctree::
    :glob:
-   :caption: Pool Examples
-   :name: pool_examples
-
-   pool_examples/*
-
-.. toctree::
-   :glob:
    :caption: Management Examples
    :name: management_examples
 
@@ -84,11 +71,11 @@ A wide verity of examples are available on Github at `here <https://github.com/e
 
 Issues
 ------
-Please report any issues on Github `here <https://github.com/eandersson/amqpstorm/issues>`_
+Please report any issues on Github `here <https://github.com/eandersson/amqpstorm3/issues>`_
 
 Source
 ------
-AMQPStorm source code is available on Github `here <https://github.com/eandersson/amqpstorm>`_
+AMQPStorm3 source code is available on Github `here <https://github.com/eandersson/amqpstorm3>`_
 
 Indices and tables
 ==================

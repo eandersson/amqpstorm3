@@ -125,10 +125,10 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 
 html_theme_options = {
-    'canonical_url': 'https://amqpstorm.readthedocs.io/',
+    'canonical_url': 'https://amqpstorm3.readthedocs.io/',
 }
 
-github_url = 'https://github.com/eandersson/amqpstorm'
+github_url = 'https://github.com/eandersson/amqpstorm3'
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []

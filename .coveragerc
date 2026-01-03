@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = amqpstorm
+source = amqpstorm3
 omit = amqpstorm3/tests/*
 parallel = True
 

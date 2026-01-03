@@ -1,26 +1,26 @@
 Management Api
 --------------
 
-.. autoclass:: amqpstorm.management.ManagementApi
+.. autoclass:: amqpstorm3.management.ManagementApi
     :members: basic, channel, connection, exchange, queue, user, aliveness_test, overview, nodes, top, whoami
 
-.. autoclass:: amqpstorm.management.basic.Basic
+.. autoclass:: amqpstorm3.management.basic.Basic
     :members:
 
-.. autoclass:: amqpstorm.management.channel.Channel
+.. autoclass:: amqpstorm3.management.channel.Channel
     :members:
 
-.. autoclass:: amqpstorm.management.connection.Connection
+.. autoclass:: amqpstorm3.management.connection.Connection
     :members:
 
-.. autoclass:: amqpstorm.management.exchange.Exchange
+.. autoclass:: amqpstorm3.management.exchange.Exchange
     :members:
 
-.. autoclass:: amqpstorm.management.queue.Queue
+.. autoclass:: amqpstorm3.management.queue.Queue
     :members:
 
-.. autoclass:: amqpstorm.management.user.User
+.. autoclass:: amqpstorm3.management.user.User
     :members:
 
-.. autoclass:: amqpstorm.management.virtual_host.VirtualHost
+.. autoclass:: amqpstorm3.management.virtual_host.VirtualHost
     :members:

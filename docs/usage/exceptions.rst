@@ -1,17 +1,17 @@
 Exceptions
 ----------
 
-.. autoclass:: amqpstorm.AMQPError
+.. autoclass:: amqpstorm3.AMQPError
     :members:
 
-.. autoclass:: amqpstorm.AMQPConnectionError
+.. autoclass:: amqpstorm3.AMQPConnectionError
     :members:
 
-.. autoclass:: amqpstorm.AMQPChannelError
+.. autoclass:: amqpstorm3.AMQPChannelError
     :members:
 
-.. autoclass:: amqpstorm.AMQPMessageError
+.. autoclass:: amqpstorm3.AMQPMessageError
     :members:
 
-.. autoclass:: amqpstorm.AMQPInvalidArgument
+.. autoclass:: amqpstorm3.AMQPInvalidArgument
     :members:

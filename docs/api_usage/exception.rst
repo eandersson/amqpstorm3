@@ -1,8 +1,8 @@
 Management Api Exceptions
 -------------------------
 
-.. autoclass:: amqpstorm.management.ApiConnectionError
+.. autoclass:: amqpstorm3.management.ApiConnectionError
     :members:
 
-.. autoclass:: amqpstorm.management.ApiError
+.. autoclass:: amqpstorm3.management.ApiError
     :members:
