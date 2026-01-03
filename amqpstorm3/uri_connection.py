@@ -112,25 +112,12 @@ class UriConnection(Connection):
             if key not in compatibility.SSL_OPTIONS:
                 LOGGER.warning('invalid option: %s', key)
                 continue
-            if 'ssl_version' in key:
-                value = self._get_ssl_version(ssl_kwargs[key][0])
             elif 'cert_reqs' in key:
                 value = self._get_ssl_validation(ssl_kwargs[key][0])
             else:
                 value = ssl_kwargs[key][0]
             ssl_options[key] = value
         return ssl_options
-
-    def _get_ssl_version(self, value):
-        """Get the TLS Version.
-
-        :param str value:
-        :return: TLS Version
-        """
-        return self._get_ssl_attribute(value, compatibility.SSL_VERSIONS,
-                                       ssl.PROTOCOL_TLSv1,
-                                       'ssl_options: ssl_version \'%s\' not '
-                                       'found falling back to PROTOCOL_TLSv1.')
 
     def _get_ssl_validation(self, value):
         """Get the TLS Validation option.
